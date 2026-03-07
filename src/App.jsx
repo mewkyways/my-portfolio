@@ -12,8 +12,8 @@ export default function App() {
       <main>
         <Section
           id="home"
-          title="สวัสดี 👋 ผมคือ (ใส่ชื่อคุณ)"
-          subtitle="ชอบทำระบบให้ทำงานง่ายขึ้น • ทำ Dashboard • ต่อไปจะทำ Full-stack"
+          title="Hello 👋 My name is Theeranai Kruedang"
+          subtitle="I enjoy making systems easier to work with • Creating dashboards • Next, I'll work on a full-stack system."
         >
           <div className="hero">
             <div className="heroBox">
