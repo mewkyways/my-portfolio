@@ -31,7 +31,7 @@ export default function App() {
                 <a className="btn" href="#projects">ดูโปรเจกต์</a>
                 <a className="btn ghost" href="#contact">ติดต่อ</a>
                 <a className="btn" href="/resume.pdf" download>
-                  ดาวน์โหลด Resume
+                  Dowload Resume
                 </a>
               </div>
             </div>
