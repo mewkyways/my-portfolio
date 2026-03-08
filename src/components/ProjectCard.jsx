@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-export default function ProjectCard({ title, desc, tags, link }) {
+export default function ProjectCard({ title, desc, tags, demo, code }) {
   return (
-    <a className="card" href={link} target="_blank" rel="noreferrer">
+    <div className="card">
       <div className="cardTop">
         <h3>{title}</h3>
         <p className="muted">{desc}</p>
@@ -12,23 +11,11 @@ export default function ProjectCard({ title, desc, tags, link }) {
           <span className="tag" key={t}>{t}</span>
         ))}
       </div>
-    </a>
-  );
-=======
-export default function ProjectCard({ title, desc, tags, link }) {
-  return (
-    <a className="card" href={link} target="_blank" rel="noreferrer">
-      <div className="cardTop">
-        <h3>{title}</h3>
-        <p className="muted">{desc}</p>
-      </div>
 
-      <div className="tags">
-        {tags.map((t) => (
-          <span className="tag" key={t}>{t}</span>
-        ))}
+      <div className="cardActions">
+        <a className="btn small" href={demo} target="_blank" rel="noreferrer">Demo</a>
+        <a className="btn small ghost" href={code} target="_blank" rel="noreferrer">Code</a>
       </div>
-    </a>
+    </div>
   );
->>>>>>> feb408c4ecae0c47b9128cb8550334bbde0fee31
 }
