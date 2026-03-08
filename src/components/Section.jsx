@@ -1,15 +1,13 @@
-export default function Navbar() {
+export default function Section({ id, title, subtitle, children }) {
   return (
-    <header className="nav">
-      <div className="container navInner">
-        <div className="brand">MyPortfolio</div>
-        <nav className="links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    <section id={id} className="section">
+      <div className="container">
+        <div className="sectionHead">
+          <h2>{title}</h2>
+          {subtitle ? <p className="muted">{subtitle}</p> : null}
+        </div>
+        {children}
       </div>
-    </header>
+    </section>
   );
 }

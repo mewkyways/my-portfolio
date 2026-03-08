@@ -12,8 +12,8 @@ export default function App() {
       <main>
         <Section
           id="home"
-          title="Hello 👋 My name is Theeranai Kruedang"
-          subtitle="I enjoy making systems easier to work with • Creating dashboards • Next, I'll work on a full-stack system."
+          title="Hello 👋 My name is Theeranai kruedang"
+          subtitle="ชอบทำระบบให้ทำงานง่ายขึ้น • ทำ Dashboard • ต่อไปจะทำ Full-stack"
         >
           <div className="hero">
             <div className="heroBox">
@@ -31,7 +31,7 @@ export default function App() {
                 <a className="btn" href="#projects">ดูโปรเจกต์</a>
                 <a className="btn ghost" href="#contact">ติดต่อ</a>
                 <a className="btn" href="/resume.pdf" download>
-                  Download Resume
+                  ดาวน์โหลด Resume
                 </a>
               </div>
             </div>
@@ -53,7 +53,11 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="about" title="About" subtitle="เขียนสั้น ๆ ว่าคุณถนัดอะไร และอยากไปทางไหน">
+        <Section
+          id="about"
+          title="About"
+          subtitle="เขียนสั้น ๆ ว่าคุณถนัดอะไร และอยากไปทางไหน"
+        >
           <div className="grid2">
             <div className="panel">
               <h3>สิ่งที่ทำ</h3>
@@ -75,13 +79,18 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="projects" title="Projects" subtitle="เดี๋ยวค่อยเปลี่ยนลิงก์จริงทีหลังได้">
+        <Section
+          id="projects"
+          title="Projects"
+          subtitle="เดี๋ยวค่อยเปลี่ยนลิงก์จริงทีหลังได้"
+        >
           <div className="cards">
             {projects.map((p) => (
               <ProjectCard key={p.title} {...p} />
             ))}
           </div>
         </Section>
+
         <Section id="contact" title="Contact" subtitle="ส่งข้อความถึงฉันได้เลย">
           <form className="panel form" name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
@@ -102,10 +111,6 @@ export default function App() {
             </label>
 
             <button className="btn" type="submit">ส่งข้อความ</button>
-
-            <p className="muted" style={{ marginTop: 10 }}>
-              *ฟอร์มนี้จะรับข้อความจริงหลัง Deploy ขึ้น Netlify
-            </p>
           </form>
         </Section>
       </main>
