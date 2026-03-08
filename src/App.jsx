@@ -13,7 +13,7 @@ export default function App() {
         <Section
           id="home"
           title="Hello 👋 My name is Theeranai kruedang"
-          subtitle="ชอบทำระบบให้ทำงานง่ายขึ้น • ทำ Dashboard • ต่อไปจะทำ Full-stack"
+          subtitle="I enjoy making systems work by: • Creating dashboards • Implementing full-stack systems."
         >
           <div className="hero">
             <div className="heroBox">
@@ -62,18 +62,18 @@ export default function App() {
             <div className="panel">
               <h3>สิ่งที่ทำ</h3>
               <ul className="list">
-                <li>ทำเว็บ/ระบบให้ทีมใช้งานง่าย</li>
-                <li>ทำ Dashboard สรุปงาน/ตัวเลข</li>
-                <li>ต่อยอดไป Backend + Database</li>
+               <li>สนใจการพัฒนาเว็บและระบบที่ช่วยแก้ปัญหาในการทำงานจริง</li>
+               <li>ชอบทำ dashboard, tracking tools และหน้าเว็บที่ใช้งานง่าย</li>
+               <li>กำลังพัฒนาทักษะ React, Git, GitHub และการ deploy เว็บจริง</li>
               </ul>
             </div>
 
             <div className="panel">
-              <h3>สกิล</h3>
+              <h3>Skills</h3>
               <div className="chips">
-                {["HTML", "CSS", "JavaScript", "React", "Vite", "Git"].map((s) => (
-                  <span className="chip" key={s}>{s}</span>
-                ))}
+                {["HTML", "CSS", "JavaScript", "React", "Vite", "Git", "GitHub", "Netlify"].map((s) => (
+                <span className="chip" key={s}>{s}</span>
+                  ))}
               </div>
             </div>
           </div>
@@ -90,7 +90,33 @@ export default function App() {
             ))}
           </div>
         </Section>
+<Section
+  id="services"
+  title="Services"
+  subtitle="สิ่งที่ผมสามารถต่อยอดและพัฒนาได้"
+>
+  <div className="grid2">
+    <div className="panel">
+      <h3>Frontend Website</h3>
+      <p className="muted">สร้างหน้าเว็บ portfolio, landing page และหน้า dashboard</p>
+    </div>
 
+    <div className="panel">
+      <h3>Dashboard UI</h3>
+      <p className="muted">ออกแบบหน้าแสดงข้อมูลให้ดูง่ายและเป็นระบบ</p>
+    </div>
+
+    <div className="panel">
+      <h3>Tracking Tools</h3>
+      <p className="muted">ต่อยอดเป็นระบบติดตามงาน สต๊อก หรือสถานะต่าง ๆ ได้</p>
+    </div>
+
+    <div className="panel">
+      <h3>Web App Learning Projects</h3>
+      <p className="muted">กำลังพัฒนาโปรเจกต์จริงเพื่อเพิ่มความสามารถและผลงาน</p>
+    </div>
+  </div>
+        </Section>
         <Section id="contact" title="Contact" subtitle="ส่งข้อความถึงฉันได้เลย">
           <form className="panel form" name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
